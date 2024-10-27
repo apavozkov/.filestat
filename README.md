@@ -1,0 +1,2 @@
+# .filestat
+Учебная задача filestat
