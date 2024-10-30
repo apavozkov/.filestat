@@ -59,14 +59,30 @@ int main() {
   closedir(dir); 
 
   // Выводим результат
-  printf("Обычныe файлы: %d\n", regular_count);
-  printf("Директории: %d\n", dir_count);
-  printf("Символьные файлы устройств: %d/n", chardevice_count);
-  printf("Блочные файлы устройств: %d/n", blockdevice_count);
-  printf("Именованные каналы: %d/n", namedpipe_count);
-  printf("Сокеты: %d/n", socket_count);
-  printf("Символические ссылки: %d/n", symlink_count);
-  printf("Неопознанные: %d/n", unknown_count);
+ if (regular_count > 0) {
+		printf("Обычные файлы: %d\n", regular_count);
+	}
+	if (dir_count > 0) {
+		printf("Директории: %d\n", dir_count);
+	}
+	if (chardevice_count > 0) {
+		printf("Символьные устройства: %d\n", chardevice_count);
+	}
+	if (blockdevice_count > 0) {
+		printf("Блочные устройства: %d\n", blockdevice_count);
+	}
+	if (namedpipe_count > 0) {
+		printf("Именованные каналы: %d\n", namedpipe_count);
+	}
+	if (socket_count > 0) {
+		printf("Сокеты: %d\n", socket_count);
+	}
+	if (symlink_count > 0) {
+		printf("Символические ссылки: %d\n", symlink_count);
+	}
+	if (unknown_count > 0) {
+		printf("Неопознанные: %d\n", unknown_count);
+	}
 
   return 0;
 }
