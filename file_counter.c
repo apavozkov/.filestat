@@ -36,7 +36,7 @@ int main() {
       continue;
     }
 
-    // Через макросы sys/stat классифицируем содержимое
+    // Классифицируем содержимое
     if (S_ISREG(fileStat.st_mode)) { // Проверяем, является ли обычным файлом
       regular_count++;
     } else if (S_ISDIR(fileStat.st_mode)) { // Проверяем, является ли директорией
