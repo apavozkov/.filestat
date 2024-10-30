@@ -59,30 +59,30 @@ int main() {
   closedir(dir); 
 
   // Выводим результат
- if (regular_count > 0) {
-		printf("Обычные файлы: %d\n", regular_count);
-	}
-	if (dir_count > 0) {
-		printf("Директории: %d\n", dir_count);
-	}
-	if (chardevice_count > 0) {
-		printf("Символьные устройства: %d\n", chardevice_count);
-	}
-	if (blockdevice_count > 0) {
-		printf("Блочные устройства: %d\n", blockdevice_count);
-	}
-	if (namedpipe_count > 0) {
-		printf("Именованные каналы: %d\n", namedpipe_count);
-	}
-	if (socket_count > 0) {
-		printf("Сокеты: %d\n", socket_count);
-	}
-	if (symlink_count > 0) {
-		printf("Символические ссылки: %d\n", symlink_count);
-	}
-	if (unknown_count > 0) {
-		printf("Неопознанные: %d\n", unknown_count);
-	}
+if (regular_count > 0) {
+	printf("Обычные файлы: %d\n", regular_count);
+}
+if (dir_count > 0) {
+	printf("Директории: %d\n", dir_count);
+}
+if (chardevice_count > 0) {
+	printf("Символьные устройства: %d\n", chardevice_count);
+}
+if (blockdevice_count > 0) {
+	printf("Блочные устройства: %d\n", blockdevice_count);
+}
+if (namedpipe_count > 0) {
+	printf("Именованные каналы: %d\n", namedpipe_count);
+}
+if (socket_count > 0) {
+	printf("Сокеты: %d\n", socket_count);
+}
+if (symlink_count > 0) {
+	printf("Символические ссылки: %d\n", symlink_count);
+}
+if (unknown_count > 0) {
+	printf("Неопознанные: %d\n", unknown_count);
+}
 
   return 0;
 }
