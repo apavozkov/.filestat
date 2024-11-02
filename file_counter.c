@@ -58,7 +58,7 @@ int main() {
 
   closedir(dir); 
 
-  // Выводим результат
+  // Выводим результат(только те показатели, кторые != 0)
 if (regular_count > 0) {
 	printf("Обычные файлы: %d\n", regular_count);
 }
